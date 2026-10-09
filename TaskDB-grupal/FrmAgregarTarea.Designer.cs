@@ -1,9 +1,16 @@
-namespace TaskDB_grupal
+﻿namespace TaskDB_grupal
 {
     partial class FrmAgregarTarea
     {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -13,75 +20,129 @@ namespace TaskDB_grupal
             base.Dispose(disposing);
         }
 
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
-            this.txtTitulo = new System.Windows.Forms.TextBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.cmbEstado = new System.Windows.Forms.ComboBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            txtTitulo = new TextBox();
+            txtDescripcion = new TextBox();
+            cmbEstado = new ComboBox();
+            btnGuardar = new Button();
+            btnCancelar = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(39, 23);
+            label1.Name = "label1";
+            label1.Size = new Size(166, 25);
+            label1.TabIndex = 0;
+            label1.Text = "Titulo de la tarea:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(39, 127);
+            label2.Name = "label2";
+            label2.Size = new Size(115, 25);
+            label2.TabIndex = 1;
+            label2.Text = "Descripcion:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(39, 249);
+            label3.Name = "label3";
+            label3.Size = new Size(72, 25);
+            label3.TabIndex = 2;
+            label3.Text = "Estado:";
             // 
             // txtTitulo
             // 
-            this.txtTitulo.Location = new System.Drawing.Point(30, 30);
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(200, 23);
-            this.txtTitulo.TabIndex = 0;
+            txtTitulo.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTitulo.Location = new Point(39, 67);
+            txtTitulo.Name = "txtTitulo";
+            txtTitulo.Size = new Size(197, 27);
+            txtTitulo.TabIndex = 3;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(30, 70);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(200, 23);
-            this.txtDescripcion.TabIndex = 1;
+            txtDescripcion.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtDescripcion.Location = new Point(39, 168);
+            txtDescripcion.Name = "txtDescripcion";
+            txtDescripcion.Size = new Size(197, 27);
+            txtDescripcion.TabIndex = 4;
             // 
             // cmbEstado
             // 
-            this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(30, 110);
-            this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(121, 23);
-            this.cmbEstado.TabIndex = 2;
+            cmbEstado.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cmbEstado.FormattingEnabled = true;
+            cmbEstado.Location = new Point(39, 292);
+            cmbEstado.Name = "cmbEstado";
+            cmbEstado.Size = new Size(197, 28);
+            cmbEstado.TabIndex = 5;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(30, 150);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 3;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnGuardar.Location = new Point(39, 359);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(124, 49);
+            btnGuardar.TabIndex = 6;
+            btnGuardar.Text = "Guardar tarea";
+            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(120, 150);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 4;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCancelar.Location = new Point(185, 359);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(127, 49);
+            btnCancelar.TabIndex = 7;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click_1;
             // 
             // FrmAgregarTarea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 211);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.cmbEstado);
-            this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.txtTitulo);
-            this.Name = "FrmAgregarTarea";
-            this.Text = "Agregar Tarea";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(660, 450);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnGuardar);
+            Controls.Add(cmbEstado);
+            Controls.Add(txtDescripcion);
+            Controls.Add(txtTitulo);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Name = "FrmAgregarTarea";
+            Text = "Registrar Tarea";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
-        public System.Windows.Forms.TextBox txtTitulo;
-        public System.Windows.Forms.TextBox txtDescripcion;
-        public System.Windows.Forms.ComboBox cmbEstado;
-        public System.Windows.Forms.Button btnGuardar;
-        public System.Windows.Forms.Button btnCancelar;
+        #endregion
+
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private TextBox txtTitulo;
+        private TextBox txtDescripcion;
+        private ComboBox cmbEstado;
+        private Button btnGuardar;
+        private Button btnCancelar;
     }
 }
