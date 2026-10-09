@@ -9,11 +9,10 @@ namespace TaskDB_grupal
 
         private void mnuListado_Click(object sender, EventArgs e)
         {
-            // Evita abrir dos listados
-            var abierto = MdiChildren.OfType<FrmListadoTareas>().FirstOrDefault();
+            var abierto = MdiChildren.OfType<FrmPrincipal>().FirstOrDefault();
             if (abierto != null) { abierto.Activate(); return; }
 
-            new FrmListadoTareas
+            new FrmPrincipal
             {
                 MdiParent = this,
                 WindowState = FormWindowState.Maximized
@@ -25,5 +24,9 @@ namespace TaskDB_grupal
             Close();
         }
 
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

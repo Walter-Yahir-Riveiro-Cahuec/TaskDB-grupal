@@ -57,14 +57,14 @@
             mnuListado.Name = "mnuListado";
             mnuListado.Size = new Size(270, 34);
             mnuListado.Text = "Listado de tareas";
-            mnuListado.Click += this.mnuListado_Click;
+            mnuListado.Click += mnuListado_Click;
             // 
             // mnuSalir
             // 
             mnuSalir.Name = "mnuSalir";
             mnuSalir.Size = new Size(270, 34);
             mnuSalir.Text = "Salir";
-            mnuSalir.Click += this.mnuSalir_Click;
+            mnuSalir.Click += mnuSalir_Click;
             // 
             // FrmPrincipal
             // 
@@ -77,6 +77,7 @@
             Name = "FrmPrincipal";
             Text = "Form1";
             WindowState = FormWindowState.Maximized;
+            Load += FrmPrincipal_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
