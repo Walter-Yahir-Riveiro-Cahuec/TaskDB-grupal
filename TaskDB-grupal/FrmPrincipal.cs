@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+
 namespace TaskDB_grupal
 {
     public partial class FrmPrincipal : Form
@@ -9,10 +12,10 @@ namespace TaskDB_grupal
 
         private void mnuListado_Click(object sender, EventArgs e)
         {
-            var abierto = MdiChildren.OfType<FrmPrincipal>().FirstOrDefault();
+            var abierto = MdiChildren.OfType<FrmListadoTareas>().FirstOrDefault();
             if (abierto != null) { abierto.Activate(); return; }
 
-            new FrmPrincipal
+            new FrmListadoTareas
             {
                 MdiParent = this,
                 WindowState = FormWindowState.Maximized
